@@ -1,0 +1,55 @@
+<h1>update an event</h1>
+eventId:<br>
+<input placeholder="eventId" [(ngModel)]="eventId"><br>
+title:<br>
+<input placeholder="title" [(ngModel)]="title"><br>
+descriptions:<br>
+<input placeholder="descriptions" [(ngModel)]="descriptions"><br>
+dates:<br>
+<input placeholder="date" [(ngModel)]="date"><button (click)="addDate()">add</button><br>
+<div>
+  <span *ngFor="let date of dates; let i = index">
+    {{date}}
+    <button (click)="removeDate(i)">*</button>
+  </span><br>
+</div>
+places:<br>
+<input placeholder="places" [(ngModel)]="place"><button (click)="addPlace()">add</button><br>
+<div>
+  <span *ngFor="let place of places; let i = index">
+    {{place}}
+    <button (click)="removePlace(i)">*</button>
+  </span><br>
+</div>
+<button (click)="update()">update</button><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button (click)="navigate('event/setFinalCondition')">setFinalCondition</button>
+<button (click)="navigate('event/details')">details</button>
+<button (click)="navigate('event/create')">create</button>
+<button (click)="navigate('event/addToGroup')">addToGroup</button>
+<button (click)="navigate('event/removeFromGroup')">removeFromGroup</button>
+<button (click)="navigate('event/delete')">delete</button>
+<button (click)="navigate('event/getCondition')">getCondition</button>
+<button (click)="navigate('event/setCondition')">setCondition</button>
+<button (click)="navigate('event/getVotes')">getVotes</button>
+<button (click)="navigate('event/setVote')">setVote</button>

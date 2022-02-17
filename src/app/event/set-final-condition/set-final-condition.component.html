@@ -1,0 +1,21 @@
+<p>set the final conditionOf an event!</p>
+eventId:<br>
+<input placeholder="eventId" [(ngModel)]="eventId"><br>
+finalPlace:<br>
+<input placeholder="place" [(ngModel)]="finalPlace"><br>
+finalDate:<br>
+<input placeholder="date" [(ngModel)]="finalDate"><br>
+<button (click)="set()">set</button><br>
+
+
+
+<button (click)="navigate('event/create')">create</button>
+<button (click)="navigate('event/details')">details</button>
+<button (click)="navigate('event/update')">update</button>
+<button (click)="navigate('event/addToGroup')">addToGroup</button>
+<button (click)="navigate('event/removeFromGroup')">removeFromGroup</button>
+<button (click)="navigate('event/delete')">delete</button>
+<button (click)="navigate('event/getCondition')">getCondition</button>
+<button (click)="navigate('event/setCondition')">setCondition</button>
+<button (click)="navigate('event/getVotes')">getVotes</button>
+<button (click)="navigate('event/setVote')">setVote</button>

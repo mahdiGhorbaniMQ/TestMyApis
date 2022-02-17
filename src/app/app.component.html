@@ -1,0 +1,28 @@
+<router-outlet></router-outlet>
+<br><br><br><br>
+<div>
+    <button (click)="navigate('login')">login panle</button>
+    <button (click)="navigate('user')">user panle</button>
+    <button (click)="navigate('group')">group panle</button>
+    <button (click)="navigate('event')">event panle</button>
+    <button (click)="navigate('socket')">socket</button>
+
+</div>
+<br><br><br><br><br><br><br><br><br><hr>
+contact:<br>
+<input placeholder="contact" [(ngModel)]="contact"><br>
+<button (click)="addContact()" >add</button>
+<button (click)="removeContact()" >remove</button>
+<br>
+<button (click)="addChatroom()">add chatroom</button>
+<button (click)="removeChatroom()">remove chatroom</button>
+<button (click)="getChatroomDetails()">get chatroom details</button>
+<button (click)="getChatroomMessages()">get chatroom message</button>
+
+<br><br><br><br><br><br><br><br><br><hr>
+message:<br>
+<input placeholder="message" [(ngModel)]="message"><br>
+<button (click)="generate()">generate key</button>
+<button (click)="get()">encrypt Message</button>
+<button (click)="send()">decrypt Message</button>
+

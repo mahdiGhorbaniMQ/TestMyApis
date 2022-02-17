@@ -1,0 +1,9 @@
+<p>connect to event messages chanle </p>
+eventId:<br>
+<input placeholder="eventId" [(ngModel)]="eventId"><br>
+<button (click)="connect()">connect</button>
+<button (click)="disconnect()">disconnect</button><br>
+<br>
+message:
+<input placeholder="message" [(ngModel)]="message"><br>
+<button (click)="sendMessage()">send</button>

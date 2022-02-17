@@ -1,0 +1,24 @@
+<p>get condition!</p>
+eventId:<br>
+<input placeholder="eventId" [(ngModel)]="eventId"><br>
+username:<br>
+<input placeholder="username" [(ngModel)]="username"><br>
+
+<button (click)="getOne()">getOne</button>
+<button (click)="getAll()">getAll</button><br>
+
+
+
+
+
+
+<button (click)="navigate('event/setFinalCondition')">setFinalCondition</button>
+<button (click)="navigate('event/details')">details</button>
+<button (click)="navigate('event/update')">update</button>
+<button (click)="navigate('event/addToGroup')">addToGroup</button>
+<button (click)="navigate('event/removeFromGroup')">removeFromGroup</button>
+<button (click)="navigate('event/delete')">delete</button>
+<button (click)="navigate('event/create')">create</button>
+<button (click)="navigate('event/setCondition')">setCondition</button>
+<button (click)="navigate('event/getVotes')">getVotes</button>
+<button (click)="navigate('event/setVote')">setVote</button>
